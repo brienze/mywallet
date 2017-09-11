@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.StatusBar?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="965.0" prefWidth="1244.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.mywallet.ui.RelatorioController">
+
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="15.0" prefWidth="1900">
+               <children>
+                  <Label fx:id="lblDataAtual" text="lblDataAtual" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <StackPane prefHeight="28.0" prefWidth="1900.0" BorderPane.alignment="CENTER">
+         <children>
+            <StatusBar prefWidth="600.0" />
+         </children>
+      </StackPane>
+   </bottom>
+   <center>
+      <HBox prefHeight="906.0" prefWidth="1291.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="964.0" prefWidth="1186.0">
+               <children>
+                  <AnchorPane prefHeight="923.0" prefWidth="1171.0">
+                     <children>
+                        <LineChart fx:id="lineChartCreditoDebito" layoutX="41.0" layoutY="3.0" prefHeight="356.0" prefWidth="600.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis fx:id="yAxis" side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                        <LineChart fx:id="lineChartCategorias" layoutX="46.0" layoutY="404.0" opacity="0.0" prefHeight="417.0" prefWidth="548.0">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </LineChart>
+                        <PieChart fx:id="pieChartSubcategorias" layoutX="94.0" layoutY="498.0" legendVisible="false" opacity="0.0" prefHeight="377.0" prefWidth="937.0" style="-fx-border-color: black;" />
+                        <LineChart fx:id="lineChartCatSub" layoutX="94.0" layoutY="671.0" prefHeight="222.0" prefWidth="1197.0" style="-fx-border-color: black;">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                        <PieChart fx:id="pieChartCategorias" layoutX="46.0" layoutY="356.0" legendVisible="false" prefHeight="304.0" prefWidth="570.0" style="-fx-border-color: black;" />
+                        <PieChart fx:id="pieChartSubcategoriasAssociada" layoutX="621.0" layoutY="359.0" prefHeight="301.0" prefWidth="616.0" style="-fx-border-color: black;" />
+                        <LineChart fx:id="lineChartSubCategorias" layoutX="620.0" layoutY="450.0" opacity="0.0" prefHeight="416.0" prefWidth="643.0">
+                           <xAxis>
+                              <CategoryAxis fx:id="lineChartSubCategoriasXAxis" side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis fx:id="lineChartSubCategoriasYAxis" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                        <LineChart fx:id="lineChartDebitosEssenciais" layoutX="629.0" layoutY="3.0" prefHeight="353.0" prefWidth="599.0">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" fx:id="xAxisEssencial" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis fx:id="yAxisEssencial" side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children></AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

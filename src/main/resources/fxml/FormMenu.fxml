@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.StatusBar?>
+<BorderPane prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.mywallet.ui.FormMenuController">
+   <center>
+       <ScrollPane fx:id="paneData" fitToHeight="true" fitToWidth="true" layoutX="125.0" layoutY="6.0" pannable="true" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="134.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="1.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></ScrollPane>
+   </center>
+   <left>
+      <VBox id="AnchorPaneVBox" alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+
+            <VBox fx:id="listMenu" alignment="TOP_CENTER" focusTraversable="true" prefHeight="494.0" prefWidth="121.0" spacing="30.0" VBox.vgrow="ALWAYS" />
+
+         </children>
+      </VBox>
+   </left>
+    <bottom>
+        <StackPane BorderPane.alignment="CENTER">
+            <children>
+                <StatusBar fx:id="statusBar" prefHeight="64.0" prefWidth="1230.0" />
+            </children>
+        </StackPane>
+    </bottom>
+   <top>
+      <HBox alignment="CENTER" style="-fx-background-color: white;" stylesheets="css/Metro-UI.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lbUser" style="-fx-font-family: Lato;" text="Label" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.ToggleSwitch?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="163.0" prefWidth="221.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.mywallet.ui.ImportarExtratoController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="30.0" prefWidth="221.0">
+         <children>
+            <ToggleSwitch fx:id="tsTipoConta" alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="90.0" text="Cartão" />
+            <Label text="Conta Corrente">
+               <HBox.margin>
+                  <Insets bottom="12.0" left="4.0" top="3.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <ComboBox fx:id="cbConta" prefWidth="150.0" promptText="Conta">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </ComboBox>
+      <ComboBox fx:id="cbMes" prefWidth="150.0" promptText="Mes">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </ComboBox>
+      <Button fx:id="butImportar" mnemonicParsing="false" onAction="#importar" prefHeight="27.0" prefWidth="149.0" text="Escolher arquivo">
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

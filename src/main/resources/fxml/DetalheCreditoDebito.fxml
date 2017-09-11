@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="828.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.mywallet.ui.DetalheCreditoDebitoController">
+
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="15.0" prefWidth="1900">
+               <children>
+                  <Label fx:id="lblDataAtual" text="lblDataAtual" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <ScrollPane hbarPolicy="ALWAYS" pannable="true" prefHeight="888.0" prefWidth="1140.0" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER">
+         <content>
+            <HBox prefHeight="855.0" prefWidth="1900.0">
+               <children>
+                  <VBox prefHeight="857.0" prefWidth="1140.0">
+                     <children>
+                        <AnchorPane prefHeight="855.0" prefWidth="1140.0">
+                           <children>
+                              <TableView fx:id="tblDebitosContaCorrente" layoutX="26.0" layoutY="89.0" prefHeight="298.0" prefWidth="536.0">
+                                <columns>
+                                  <TableColumn fx:id="colContaCorrenteData" prefWidth="75.0" text="Data" />
+                                  <TableColumn fx:id="colContaCorrenteDescricao" prefWidth="186.0" text="Descricao" />
+                                    <TableColumn fx:id="colContaCorrenteValor" prefWidth="148.0" text="Valor" />
+                                    <TableColumn fx:id="colContaCorrenteCategoria" prefWidth="126.0" text="Categoria" />
+                                </columns>
+                              </TableView>
+                              <TableView fx:id="tblCreditos" layoutX="570.0" layoutY="89.0" prefHeight="637.0" prefWidth="536.0">
+                                 <columns>
+                                    <TableColumn fx:id="colCreditoData" prefWidth="75.0" text="Data" />
+                                    <TableColumn fx:id="colCreditoDescricao" prefWidth="255.0" text="Descricao" />
+                                    <TableColumn fx:id="colCreditoValor" prefWidth="89.0" text="Valor" />
+                                    <TableColumn fx:id="colCreditoCategoria" prefWidth="117.0" text="Categoria" />
+                                 </columns>
+                              </TableView>
+                              <Label fx:id="lblDebito" layoutX="26.0" layoutY="735.0" text="Total" />
+                              <Label fx:id="lblCredito" layoutX="777.0" layoutY="34.0" prefHeight="17.0" prefWidth="107.0" text="R$ 12.000,00" />
+                              <Label fx:id="lblContaCorrente" layoutX="88.0" layoutY="395.0" prefHeight="17.0" prefWidth="107.0" text="R$ 12.000,00" />
+                              <Label fx:id="lblCartaoCredito" layoutX="114.0" layoutY="735.0" prefHeight="17.0" prefWidth="107.0" text="R$ 12.000,00" />
+                              <Button fx:id="btnFechar" layoutX="521.0" layoutY="744.0" mnemonicParsing="false" onAction="#doFechar" prefHeight="27.0" prefWidth="99.0" text="Fechar" />
+                              <Label fx:id="lblFirst" layoutX="221.0" layoutY="68.0" text="Débitos Conta Corrente" />
+                              <Label fx:id="lblThird" layoutX="785.0" layoutY="68.0" text="Créditos" />
+                              <TableView fx:id="tblDebitosCartaoCredito" layoutX="26.0" layoutY="456.0" prefHeight="271.0" prefWidth="536.0">
+                                 <columns>
+                                    <TableColumn fx:id="colCartaoData" prefWidth="75.0" text="Data" />
+                                    <TableColumn fx:id="colCartaoDescricao" prefWidth="186.0" text="Descricao" />
+                                    <TableColumn fx:id="colCartaoValor" prefWidth="148.0" text="Valor" />
+                                    <TableColumn fx:id="colCartaoCategoria" prefWidth="126.0" text="Categoria" />
+                                 </columns>
+                              </TableView>
+                              <Label fx:id="lblSecond" layoutX="224.0" layoutY="428.0" text="Débitos Cartão Crédito" />
+                              <Label fx:id="lblDebito1" layoutX="26.0" layoutY="395.0" text="Total" />
+                              <Label fx:id="lblDebito2" layoutX="182.0" layoutY="34.0" text="Total" />
+                              <Label fx:id="lblDebitos" layoutX="236.0" layoutY="34.0" prefHeight="17.0" prefWidth="107.0" text="R$ 12.000,00" />
+                              <Label fx:id="lblDebito21" layoutX="732.0" layoutY="34.0" text="Total" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

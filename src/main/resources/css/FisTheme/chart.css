@@ -1,0 +1,7 @@
+.chart-series-line {
+    -fx-stroke-width: 2px;
+    -fx-effect: null;
+}
+.default-color0.chart-series-line .chart-legend-item-symbol { -fx-stroke: #8DC63F; -fx-background-color:#8DC63F; }
+.default-color1.chart-series-line .chart-legend-item-symbol { -fx-stroke: #404c2f; -fx-background-color:#404c2f; }
+

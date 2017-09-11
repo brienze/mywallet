@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.StatusBar?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1150" prefWidth="1900" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.mywallet.ui.DashboardController">
+
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="15.0" prefWidth="1900">
+               <children>
+                  <MenuBar prefHeight="29.0" prefWidth="1900">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Conta">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Configuração">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </HBox>
+            <StackPane prefHeight="16.0" prefWidth="600.0">
+               <children>
+                  <StatusBar />
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <StackPane prefHeight="25.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <StatusBar prefWidth="600.0" />
+         </children>
+      </StackPane>
+   </bottom>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="1065.0" prefWidth="742.0">
+               <children>
+                  <AnchorPane prefHeight="322.0" prefWidth="741.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Contas" />
+                        <Label layoutX="14.0" layoutY="51.0" text="Total" />
+                        <Label layoutX="58.0" layoutY="51.0" text="R$ 7.654,00" />
+                        <Label layoutX="14.0" layoutY="79.0" text="Banco Itaú" />
+                        <Label layoutX="25.0" layoutY="107.0" text="341" />
+                        <Label layoutX="135.0" layoutY="107.0" text="0*****5" />
+                        <Label layoutX="135.0" layoutY="136.0" text="-R$ 4.000,94" />
+                        <Label layoutX="14.0" layoutY="161.0" text="Banco Citibank" />
+                        <Label layoutX="25.0" layoutY="189.0" text="745" />
+                        <Label layoutX="135.0" layoutY="189.0" text="Manual" />
+                        <Label layoutX="135.0" layoutY="218.0" text="-R$ 6.007,98" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="344.0" prefWidth="741.0">
+                     <children>
+                        <Label layoutX="4.0" layoutY="14.0" text="Cartões" />
+                        <Label layoutX="4.0" layoutY="51.0" text="Total" />
+                        <Label layoutX="48.0" layoutY="51.0" text="R$ -7.959,55" />
+                        <Label layoutX="4.0" layoutY="79.0" text="Personalite Visa Platinum" />
+                        <Label layoutX="15.0" layoutY="107.0" text="341" />
+                        <Label layoutX="125.0" layoutY="107.0" text="0*****5" />
+                        <Label layoutX="125.0" layoutY="136.0" text="-R$ 112.01" />
+                        <Label layoutX="4.0" layoutY="161.0" text="Personalite Multiplo Mastercard Platinum" />
+                        <Label layoutX="15.0" layoutY="189.0" text="341" />
+                        <Label layoutX="125.0" layoutY="189.0" text="*****-5" />
+                        <Label layoutX="125.0" layoutY="218.0" text="-R$ 4.301,40" />
+                        <Label layoutX="5.0" layoutY="255.0" text="Personalite Multiplo Mastercard Platinum" />
+                        <Label layoutX="16.0" layoutY="283.0" text="341" />
+                        <Label layoutX="126.0" layoutY="283.0" text="*****-5" />
+                        <Label layoutX="126.0" layoutY="312.0" text="-R$ 3.546,14" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="404.0" prefWidth="741.0">
+                     <children>
+                        <Label layoutX="12.0" layoutY="21.0" text="Investimentos" />
+                        <Label layoutX="12.0" layoutY="58.0" text="Total" />
+                        <Label layoutX="56.0" layoutY="58.0" text="R$ 188.670,02" />
+                        <Label layoutX="6.0" layoutY="97.0" text="XP" />
+                        <Label layoutX="41.0" layoutY="151.0" text="Fundo Renda Fixa - BTGPacYield DIFI CP" />
+                        <Label layoutX="308.0" layoutY="151.0" text="R$ 13.548,14" />
+                        <Label layoutX="41.0" layoutY="184.0" text="Fundo Açõe - XP LongBiased FICFIM" />
+                        <Label layoutX="309.0" layoutY="183.0" text="R$ 33.840,65" />
+                        <Label layoutX="41.0" layoutY="218.0" text="Fundo Ações - XP INV FIA" />
+                        <Label layoutX="309.0" layoutY="217.0" text="R$ 57.053,06" />
+                        <Label layoutX="17.0" layoutY="248.0" text="Renda Fixa" />
+                        <Label layoutX="285.0" layoutY="247.0" text="R$ 20.592,44" />
+                        <Label layoutX="16.0" layoutY="276.0" text="Tesouro Direto" />
+                        <Label layoutX="284.0" layoutY="275.0" text="R$ 11.718,50" />
+                        <Label layoutX="17.0" layoutY="120.0" text="Fundos" />
+                        <Label layoutX="308.0" layoutY="120.0" text="R$ 104.441,85" />
+                        <Label layoutX="16.0" layoutY="312.0" text="Conta corrente" />
+                        <Label layoutX="284.0" layoutY="312.0" text="R$ 51.917,23" />
+                        <Label layoutX="436.0" layoutY="151.0" text="1.19" />
+                        <Label layoutX="436.0" layoutY="183.0" text="-3,79" />
+                        <Label layoutX="436.0" layoutY="210.0" text="-3,38" />
+                        <Label layoutX="436.0" layoutY="247.0" text="1.19" />
+                        <Label layoutX="436.0" layoutY="276.0" text="1.24" />
+                        <Label layoutX="436.0" layoutY="312.0" text="-" />
+                        <Label layoutX="311.0" layoutY="58.0" text="2.34" />
+                        <Label layoutX="381.0" layoutY="58.0" text="2.34" />
+                        <Label layoutX="480.0" layoutY="58.0" text="2.34" />
+                        <Label layoutX="311.0" layoutY="21.0" text="Mês" />
+                        <Label layoutX="381.0" layoutY="21.0" text="Ano" />
+                        <Label layoutX="465.0" layoutY="21.0" text="12 meses" />
+                        <Label layoutX="436.0" layoutY="97.0" text="Mês" />
+                        <Label layoutX="515.0" layoutY="97.0" text="Ano" />
+                        <Label layoutX="599.0" layoutY="97.0" text="12 meses" />
+                        <Label layoutX="510.0" layoutY="147.0" text="1.19" />
+                        <Label layoutX="510.0" layoutY="179.0" text="-3,79" />
+                        <Label layoutX="510.0" layoutY="206.0" text="-3,38" />
+                        <Label layoutX="510.0" layoutY="243.0" text="1.19" />
+                        <Label layoutX="510.0" layoutY="272.0" text="1.24" />
+                        <Label layoutX="611.0" layoutY="144.0" text="1.19" />
+                        <Label layoutX="611.0" layoutY="176.0" text="-3,79" />
+                        <Label layoutX="611.0" layoutY="203.0" text="-3,38" />
+                        <Label layoutX="611.0" layoutY="240.0" text="1.19" />
+                        <Label layoutX="611.0" layoutY="269.0" text="1.24" />
+                     </children></AnchorPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="1065.0" prefWidth="1161.0">
+               <children>
+                  <AnchorPane prefHeight="435.0" prefWidth="1160.0">
+                     <children>
+                        <Label layoutX="15.0" layoutY="16.0" text="Ultimas Transações" />
+                        <Label layoutX="30.0" layoutY="69.0" text="19 Quarta" />
+                        <Label layoutX="180.0" layoutY="69.0" text="PayPal STRAR 4/10" />
+                        <Label layoutX="383.0" layoutY="69.0" text="Presente" />
+                        <Label layoutX="494.0" layoutY="69.0" text="-R$ 314,99" />
+                        <Label layoutX="31.0" layoutY="112.0" text="15 Sábado" />
+                        <Label layoutX="181.0" layoutY="112.0" text="HOTMART*GuiaInvest11/12" />
+                        <Label layoutX="380.0" layoutY="112.0" text="Classificar" />
+                        <Label layoutX="495.0" layoutY="112.0" text="R$ -47,00" />
+                        <Label layoutX="32.0" layoutY="153.0" text="15 Sábado" />
+                        <Label layoutX="182.0" layoutY="153.0" text="HOTMART*GuiaInvest09/12" />
+                        <Label layoutX="381.0" layoutY="153.0" text="Classificar" />
+                        <Label layoutX="496.0" layoutY="153.0" text="R$ -47,00" />
+                        <Label layoutX="31.0" layoutY="193.0" text="15 Sábado" />
+                        <Label layoutX="181.0" layoutY="193.0" text="HOTMART*GuiaInvest10/12" />
+                        <Label layoutX="380.0" layoutY="193.0" text="Classificar" />
+                        <Label layoutX="495.0" layoutY="193.0" text="R$ -47,00" />
+                        <Label layoutX="33.0" layoutY="239.0" text="10 Segunda" />
+                        <Label layoutX="183.0" layoutY="239.0" text="TOYOTA BUTANTA 04/06" />
+                        <Label layoutX="382.0" layoutY="239.0" text="Transporte" />
+                        <Label layoutX="497.0" layoutY="239.0" text="R$ -325,00" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="321.0" prefWidth="1160.0">
+                     <children>
+                        <ImageView fitHeight="237.0" fitWidth="796.0" layoutX="43.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="img/gastos_categoria_pizza.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="309.0" prefWidth="1160.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="6.0" text="Gastos por Categoria" />
+                        <ImageView fitHeight="252.0" fitWidth="477.0" layoutX="45.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="img/gastos_categoria.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

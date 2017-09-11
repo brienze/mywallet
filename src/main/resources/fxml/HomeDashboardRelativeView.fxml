@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.StatusBar?>
+<?import javafx.stage.Screen?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="${screen.visualBounds.height}" prefWidth="${screen.visualBounds.width}" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.mywallet.ui.MainController">
+    <fx:define>
+        <Screen fx:factory="getPrimary" fx:id="screen" />
+    </fx:define>
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="15.0" prefWidth="600.0">
+               <children>
+                  <MenuBar prefHeight="29.0" prefWidth="${screen.visualBounds.width}">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Conta">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Configuração">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </HBox>
+            <StackPane prefHeight="16.0" prefWidth="600.0">
+               <children>
+                  <StatusBar />
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <StackPane prefHeight="25.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <StatusBar prefWidth="600.0" />
+         </children>
+      </StackPane>
+   </bottom>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="315.0" prefWidth="181.0">
+               <children>
+                  <AnchorPane prefHeight="118.0" prefWidth="174.0" />
+                  <AnchorPane prefHeight="128.0" prefWidth="174.0" />
+                  <AnchorPane prefHeight="128.0" prefWidth="174.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="315.0" prefWidth="433.0">
+               <children>
+                  <AnchorPane prefHeight="263.0" prefWidth="426.0" />
+                  <AnchorPane prefHeight="238.0" prefWidth="426.0" />
+                  <AnchorPane prefHeight="239.0" prefWidth="426.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.StatusBar?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1150" prefWidth="1900" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.mywallet.ui.MainController">
+
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="15.0" prefWidth="1900">
+               <children>
+                  <MenuBar prefHeight="29.0" prefWidth="1900">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Conta">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Configuração">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </HBox>
+            <StackPane prefHeight="16.0" prefWidth="600.0">
+               <children>
+                  <StatusBar />
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <StackPane prefHeight="25.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <StatusBar prefWidth="600.0" />
+         </children>
+      </StackPane>
+   </bottom>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="1065.0" prefWidth="1161.0">
+               <children>
+                  <AnchorPane prefHeight="56.0" prefWidth="1161.0">
+                     <children>
+                        <Label layoutX="389.0" layoutY="9.0" text="Abril-2017" />
+                        <Label layoutX="276.0" layoutY="9.0" text="Mês anterior" />
+                        <Label layoutX="497.0" layoutY="9.0" text="Mês seginte" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="186.0" prefWidth="1160.0">
+                     <children>
+                        <Label layoutX="417.0" text="Resumo" />
+                        <ImageView fitHeight="243.0" fitWidth="469.0" layoutX="233.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/planejamento_geral.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="186.0" prefWidth="1160.0">
+                     <children>
+                        <ImageView fitHeight="180.0" fitWidth="514.0" layoutX="215.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/planejamento_1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="186.0" prefWidth="1160.0">
+                     <children>
+                        <ImageView fitHeight="269.0" fitWidth="401.0" layoutX="195.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="img/planejamento_2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="369.0" prefWidth="1161.0">
+                     <children>
+                        <ImageView fitHeight="363.0" fitWidth="433.0" layoutX="209.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="img/planejamento_2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
